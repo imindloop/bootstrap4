@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Bootstrap4 Course || SafariBooks</title>
+    <style>
+        .container {
+          margin-top: 50px;
+          background-color: brown;
+          height: 700px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap; /* the "nowrap" property doesn't allow items to shrink */
+          justify-content: space-evenly;
+          align-items: center;
+  
+  
+        }
+  
+        .item {
+          padding: 30px;
+          margin: 10px;
+          color: azure;
+          background: green;
+          text-align: center;
+          font-size: 30px; 
+          width: 70px;
+        }
+
+        .item1 {
+            order: 1; /* this of assigning an order is not exactly about ordering them by number, but instead about assigning them a weight or priority which will priorize them setting 
+                            the highest number at the beginning of the main direction of the flexbox and the lower at the end */
+            /*align-self: stretch;*/
+            /*flex-grow: 5;*/  /* flex-grow property determines at what rate the element having it is going to grow or reduce when the display port size is increased */
+            width: 200px;
+        }
+
+        .item5 {
+            order: -1;
+            /* flex-shrink: 5; */ /* this works in the opposite way of flex-grow */
+            width: 200px;
+            flex-basis: 100px; /* this overwrites/overrides the value of width, and is IMPORTANT to note that if the flex-direction is row then it specifies the width, but if
+                                column is specified, then it is setting the height */
+            flex: ; /* This property allows to specify multiple flex properties at once, in a single place and the order is the following: 
+                    | flex-grow | flex-shrink | flex-basis |
+        }
+  
+      </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+        <div class="item item4">D</div>
+        <div class="item item5">E</div> 
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
